@@ -1,6 +1,6 @@
 # CG-DGAE: Cluster-guided Denoising Graph Auto-Encoder
 
-This  for traffic sensor data analysis. The model uses cluster information to guide the denoising procerepository implements a Cluster-guided Denoising Graph Auto-Encoder (CG-DGAE)ss in a graph auto-encoder architecture. The clustering module is not included in this repo but in the other repo.
+This for traffic sensor data rectification. The model uses cluster information to guide sampling procudure to train a graph auto-encoder. The trained model enables to rectify faulty traffic sensor sequence at a cluster level. The clustering module is not included in this repo but in the other repo.
 
 
 ## Model Architecture
@@ -19,7 +19,6 @@ The following data files are required:
 - Clustering results: `data/clustering_result_july13.csv`
 - Station coordinates: `data/station_coordinates.csv`
 
-Each station's data should be in a separate CSV file with a 'Volume' column.
 
 ## Installation
 
